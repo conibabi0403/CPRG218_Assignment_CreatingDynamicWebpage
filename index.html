@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Step 1: Link styles.css file here -->  <link rel="stylesheet" href="css/styles.css">
     <title>Search Your Movie</title>
+    
+    <!-- Step 1: Link styles.css file here -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>Movies Database</h1>
         <a class="link" href="pages/about.html">ℹ︎</a>
-        <p>Search Your Favourit Movie</p>
+        <p>Search Your Favourite Movie</p>
     </header>
     
     <main id="mainBody">
@@ -18,17 +20,25 @@
             <div id="searchDiv">
                 <input id="searchBar" type="text" title="Enter Movie" placeholder="Enter movie title">
                 <div id="searchIconDiv">
-                    <img id="icon" src="assets/icons/search.png" alt="search icon">
+                    <img id="icon" src="assets/icons/search.png" alt="search icon" style="cursor: pointer;">
                 </div>
             </div>
         </section>
+        
         <section id="movieCards">
-
-            <!-- Add movie cards in this section -->
-
+            <!-- Movie cards will be added here dynamically -->
         </section>
+    </main>
 
-<!-- Step 2: Link the main.js file here -->
+    <footer>
+        <p>Powered by 
+            <a href="https://www.omdbapi.com/" rel="noopener" target="_blank">
+                <span class="highlight">The Open Movie Database</span>
+            </a>
+        </p>
+    </footer>
+
+    <!-- Step 2: Link the main.js file here -->
     <script src="script/main.js"></script>
 </body>
 </html>

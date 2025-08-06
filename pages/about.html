@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link the styles.css file here -->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Search Your Movie</title>
 </head>
 <body>
     <header>
         <h1>Movies Database</h1>
         <a class="link" href="../index.html">🏠</a>
-        <p>Search Your Favourit Movie</p>
+        <p>Search Your Favourite Movie</p>
     </header>
 
     <main id="mainBody">
         <section>
             <div id="aboutDiv">
-                <p id="aboutWebsite">This website is powered by <span class="highlight">The Open Movie Database</span></p>
+                <p id="aboutWebsite">
+                    This website allows you to search for movies by title using data from 
+                    <span class="highlight">The Open Movie Database (OMDb)</span>. It fetches live movie information 
+                    and posters based on your input. Simply enter a movie title below and explore!
+                </p>
             </div>
-            
+
+            <!-- Search Bar Section -->
+            <div id="searchDiv">
+                <input type="text" id="searchBar" placeholder="Enter movie title..." />
+                <div id="searchIconDiv">🔍</div>
+            </div>
+
+            <!-- Movie Results Section -->
+            <div id="movieCards"></div>
         </section>
     </main>
+
     <footer>
-        <p>Powered by <a href="https://www.omdbapi.com/" rel="noopener" target="_blank"><span class="highlight">The Open Movie Database</span></a></p>
+        <p>
+            Powered by 
+            <a href="https://www.omdbapi.com/" rel="noopener" target="_blank">
+                <span class="highlight">The Open Movie Database</span>
+            </a>
+        </p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

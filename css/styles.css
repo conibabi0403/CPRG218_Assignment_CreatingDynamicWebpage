@@ -140,3 +140,35 @@ section {
 }
 
 /* Implement your styling here */
+.card {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardPosterDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moviePoster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
