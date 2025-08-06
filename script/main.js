@@ -1,4 +1,4 @@
-const myApiKey = "92552a15"; 
+
 let BASE_URL = 'https://www.omdbapi.com';
 
 document.addEventListener('DOMContentLoaded', addEventHandlers);
